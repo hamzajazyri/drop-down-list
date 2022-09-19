@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item-root{
+            border:1px solid red;
+        }
+        .bef-icon{
+            position: relative;
+        }
+        .bef-icon > label{
+            background:#eee;
+            font-weight: bold;
+        
+        }
+        .bef-icon::before{
+            content: "|||||  ";
+            position: absolute;
+            pointer-events: none;
+            left:0px;
+            top:0px;
+        }
+        .display-none{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="multiselect"></div>
+    <div id="multiselect2"></div>
+
+    <button id="btn">display</button>
+    <button id="btn2">display2</button>
+    <script src="multi-select.js"></script>
+</body>
+</html>
